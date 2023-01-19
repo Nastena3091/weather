@@ -142,8 +142,8 @@ export default {
         <button @click="selectCity">Погода</button>
       </div>
     </section>
-    <section :class="theme">
-      <table v-if="this.select==true">
+    <section :class="theme" v-if="this.select==true">
+      <table >
         <tr>
           <td>Координати</td>
           <td>[{{ lon }},{{ lat }}]</td>
